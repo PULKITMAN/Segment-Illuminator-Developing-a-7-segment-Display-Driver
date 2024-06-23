@@ -1,3 +1,3 @@
-# VSD_MINI_ResearchInternship
+# VSDsquadron-mini-internship
 RISC-V Research Internship.
 
