@@ -14,6 +14,7 @@ After running the code in the terminal, I needed to run it in the RISC-V simulat
 2. Next To obtain the assembly code for the aforementioned C program, I wrote the code ***riscv-unknown-elf-objdump -d sum1ton.o***. I received many assembly codes in return. Merely by appending "| less" to the command, the number of assembly codes shown were lowered. I searched the "main" section to get the instructions for our main code. The byte address for main was found to be 10184 and got 35 instrusctions when using option 1. I saw that the address of every instruction that followed was increased by 4.
 ![main assembly](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/2ef3878a-4e56-48cd-a773-2f953ef3c94c)
 3. After this I run the identical instructions with a different parameter, instead of ***O1***, I used ***Ofast***. I didn't observed any changes in the instructions.
+   
 ![main assembly fast](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/1d3d065d-cc21-4200-93d1-4564f364b854)
 
 ### Task 1 finished
