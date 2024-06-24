@@ -68,4 +68,9 @@ Since we now have basic knowledge of the 7 segment display we can start making t
 
 I am first making the driver for the common cathode display. There will be '4' inputs which will have value either as '0' or '1'. These 4 inputs will represent a 4 bit number thus giving us 16 different values so that we can dispaly the numbers from '0' to '9' and alphabets from 'A' to 'F'.
 
-There will be 7 different outputs each representing a segment of the display and all the outputs will have values either as '0' or '1'. The truth-table shown in the below image shows the state of the outputs for various inputs. Since, we are making driver for common cathode display, '1' represents that the corresponding LED is on and vice-versa.
+There will be 7 different outputs each representing a segment of the display and all the outputs will have values either as '0' or '1'.
+
+The truth-table shown in the below image shows the state of the outputs for various inputs. Since, we are making driver for common cathode display, '1' represents that the corresponding LED is on and vice-versa.
+
+![IMG_20240625_023954](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/b2867ec1-fa90-4088-8681-7d80b559fee0)
+
