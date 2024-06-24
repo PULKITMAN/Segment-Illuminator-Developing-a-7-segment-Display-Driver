@@ -32,6 +32,11 @@ One of the most basic kinds of display devices is a 7-segment display, which can
 
 Each LED is known as a ‘Segment’ with names a, b, c, d, e, f and g. Most 7 Segment Display have an additional segment in the form of a dot(known as dp). It is technically an 8 Segment Display with 7 Segments responsible for displaying the main numerical data and one dot segment.
 
-Pinout and labelling of the 7 segment display is as shown in the below image.
+Pinout and labelling of the 7 segment display is as shown below:
 
 ![7-Segment-Common-Anode-Common-Cathode-Pinout](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/b07d4c34-53b3-4f76-8384-b815d33de140)
+
+It requires you to turn on or off a collection of Segments in order to display a specific number. For instance, all segments must be ON except for segment "g" in order to display the number "0." The following image shows how the numbers '0' through '9' and the letters 'A' to 'F' will look like on a standard 7 Segment Display.
+
+
+
