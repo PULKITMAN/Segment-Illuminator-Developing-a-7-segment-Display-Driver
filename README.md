@@ -59,3 +59,7 @@ In a Common Anode type 7 Segment Display, the anodes of all the 8 LEDs are conne
 The following image shows the internal connection of a Common Anode type 7 Segment Display:
 
 ![7-Segment-Display-Pinout-Image-3](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/8eab72bd-7ed7-4d91-8e40-3f33d88e7837)
+
+There is one important thing about common anode and common cathode type 7 Segment Displays that we need to remember. In case of Common Anode 7 Segment Display, we connect the common anode pin to VCC (i.e., positive of the power supply, usually +5V) all the time. To turn ON a particular segment, we make the corresponding cathode pin LOW.
+
+In case of Common Cathode 7 Segment Display, we connect the common cathode pin to GND (i.e., negative of the power supply) all the time and make a particular anode pin HIGH to turn ON the corresponding segment.
