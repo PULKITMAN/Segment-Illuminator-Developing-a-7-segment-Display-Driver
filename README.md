@@ -38,5 +38,6 @@ Pinout and labelling of the 7 segment display is as shown below:
 
 It requires you to turn on or off a collection of Segments in order to display a specific number. For instance, all segments must be ON except for segment "g" in order to display the number "0." The following image shows how the numbers '0' through '9' and the letters 'A' to 'F' will look like on a standard 7 Segment Display.
 
+![7-Segment-Display-Number-Formation-Segment-Contol](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/3a419c06-db5a-4dcd-beed-354f13a0fea6)
 
 
