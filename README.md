@@ -50,7 +50,8 @@ The cathodes of all eight LEDs in a Common Cathode type 7 Segment Display are li
 
 The following image shows the internal connection of a Common Cathode type 7 Segment Display:
 
-![7-Segment-Display-Pinout-Image-3](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/8eab72bd-7ed7-4d91-8e40-3f33d88e7837)
+![7-Segment-Display-Pinout-Image-2](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/7002c2e7-2e7a-4ada-ba51-89cb9435de03)
+
 
 #### Common Anode
 In a Common Anode type 7 Segment Display, the anodes of all the 8 LEDs are connected together and made common for the entire display unit. As a result, we have just 9 pins/connections to control the entire 7 Segment Display unit (8 Cathode pins of 8 LEDs and one common Anode pin).
