@@ -27,6 +27,6 @@ After running the code in the terminal, I needed to run it in the RISC-V simulat
 ### My project is to develop a 7 segment display driver.
 Before writing the code first we should understand what is a "***7 segment display***" and how does it work. Once we understand how does it works we can develop the driver to run it very easily.
 
-###An Overview of 7 Segment Display
+### An Overview of 7 Segment Display
 One of the most basic kinds of display devices is a 7-segment display, which can show characters from "A" to "F" in addition to numbers from 0 to 9. The term "7 Segment Display" refers to the configuration of seven LEDs, which are placed in the shape of a "8" using hexagonal bars.
 Each LED is known as a ‘Segment’ with names a, b, c, d, e, f and g. Most 7 Segment Display have an additional segment in the form of a dot(known as dp). It is technically an 8 Segment Display with 7 Segments responsible for displaying the main numerical data and one dot segment. Pinout and labelling of the 7 segment display is as shown in the below image.
