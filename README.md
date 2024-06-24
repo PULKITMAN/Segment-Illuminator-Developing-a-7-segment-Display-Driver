@@ -63,3 +63,9 @@ The following image shows the internal connection of a Common Anode type 7 Segme
 There is one important thing about common anode and common cathode type 7 Segment Displays that we need to remember. In case of Common Anode 7 Segment Display, we connect the common anode pin to VCC (i.e., positive of the power supply, usually +5V) all the time. To turn ON a particular segment, we make the corresponding cathode pin LOW.
 
 In case of Common Cathode 7 Segment Display, we connect the common cathode pin to GND (i.e., negative of the power supply) all the time and make a particular anode pin HIGH to turn ON the corresponding segment.
+
+Since we now have basic knowledge of the 7 segment display we can start making the driver for the display.
+
+I am first making the driver for the common cathode display. There will be '4' inputs which will have value either as '0' or '1'. These 4 inputs will represent a 4 bit number thus giving us 16 different values so that we can dispaly the numbers from '0' to '9' and alphabets from 'A' to 'F'.
+
+There will be 7 different outputs each representing a segment of the display and all the outputs will have values either as '0' or '1'. The truth-table shown in the below image shows the state of the outputs for various inputs. Since, we are making driver for common cathode display, '1' represents that the corresponding LED is on and vice-versa.
