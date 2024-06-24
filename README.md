@@ -74,3 +74,4 @@ The truth-table shown in the below image shows the state of the outputs for vari
 
 ![IMG_20240625_023954](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/b2867ec1-fa90-4088-8681-7d80b559fee0)
 
+To code we can think making an array of bitstrings and depending on the input we will assign the values of the bitstring to the respective output variables.
