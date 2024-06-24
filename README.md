@@ -29,4 +29,5 @@ Before writing the code first we should understand what is a "***7 segment displ
 
 ### An Overview of 7 Segment Display
 One of the most basic kinds of display devices is a 7-segment display, which can show characters from "A" to "F" in addition to numbers from 0 to 9. The term "7 Segment Display" refers to the configuration of seven LEDs, which are placed in the shape of a "8" using hexagonal bars.
+
 Each LED is known as a ‘Segment’ with names a, b, c, d, e, f and g. Most 7 Segment Display have an additional segment in the form of a dot(known as dp). It is technically an 8 Segment Display with 7 Segments responsible for displaying the main numerical data and one dot segment. Pinout and labelling of the 7 segment display is as shown in the below image.
