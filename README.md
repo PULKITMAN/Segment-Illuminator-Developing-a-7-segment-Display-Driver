@@ -21,3 +21,8 @@ After running the code in the terminal, I needed to run it in the RISC-V simulat
 ![main assembly fast](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/1d3d065d-cc21-4200-93d1-4564f364b854)
 
 ### Task 1 finished
+
+
+## Task - 2 -> Write a simple C program for your project selected and compile with RISC-V GCC
+### My project is to develop a 7 segment display driver.
+Before writing the code first we should understand what is a "***7 segment display***" and how does it work. Once we understand how does it works we can develop the driver to run it very easily.
