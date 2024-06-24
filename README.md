@@ -36,8 +36,17 @@ Pinout and labelling of the 7 segment display is as shown below:
 
 ![7-Segment-Common-Anode-Common-Cathode-Pinout](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/b07d4c34-53b3-4f76-8384-b815d33de140)
 
-It requires you to turn on or off a collection of Segments in order to display a specific number. For instance, all segments must be ON except for segment "g" in order to display the number "0." The following image shows how the numbers '0' through '9' and the letters 'A' to 'F' will look like on a standard 7 Segment Display.
+It requires you to turn on or off a collection of Segments in order to display a specific number. For instance, all segments must be ON except for segment "g" in order to display the number "0".
+
+The following image shows how the numbers '0' through '9' and the letters 'A' to 'F' will look like on a standard 7 Segment Display.
 
 ![7-Segment-Display-Number-Formation-Segment-Contol](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/3a419c06-db5a-4dcd-beed-354f13a0fea6)
 
+### Types of 7 Segment Displays
+There are two main kinds of 7-segment displays, depending on how the LEDs are connected inside. The two are known as the "common cathode" and "common anode".
+
+#### Common Cathode
+The cathodes of all eight LEDs in a Common Cathode type 7 Segment Display are linked and made common for the display unit as a whole. Consequently, the full 7-segment display device may be controlled with just 8 pins or connections.
+
+The following image shows the internal connection of a Common Anode type 7 Segment Display:
 
