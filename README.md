@@ -50,3 +50,4 @@ The cathodes of all eight LEDs in a Common Cathode type 7 Segment Display are li
 
 The following image shows the internal connection of a Common Anode type 7 Segment Display:
 
+![7-Segment-Display-Pinout-Image-3](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/8eab72bd-7ed7-4d91-8e40-3f33d88e7837)
