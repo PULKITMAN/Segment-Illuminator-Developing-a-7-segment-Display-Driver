@@ -92,3 +92,4 @@ Now we should update our code and compile it using "***risc-v gcc***" which is t
 
 ![code for driver riscv](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/98dc65bd-d821-4590-a61c-ec3b2c1f69f1)
 
+#### Compiled Risc v file(.o file) generated:
