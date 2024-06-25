@@ -88,3 +88,6 @@ The image attached below shows the output.
 
 Now we should update our code and compile it using "***risc-v gcc***" which is the main task.
 
+#### Updated Code:
+
+
