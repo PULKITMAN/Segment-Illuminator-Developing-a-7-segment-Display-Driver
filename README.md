@@ -84,7 +84,8 @@ The image shown below shows my code. To check the output I have displayed the va
 
 The image attached below shows the output.
 
-![code for driver](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/54f09491-3c61-4899-bdd6-862d2c71ce0b)
+![compiled code result driver](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/b11e2f95-54c3-49bc-a842-8e7c8027912a)
+
 
 Now we should update our code and compile it using "***risc-v gcc***" which is the main task.
 
