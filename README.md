@@ -97,3 +97,12 @@ Now we should update our code and compile it using "***risc-v gcc***" which is t
 
 ![risc v compiled driver basic](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/51845bcb-e377-406d-9eda-910819553672)
 
+#### "main" method in assembly language:
+
+![ins set driver basic main](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/ad1d6b57-a898-4a6c-bbfb-e064d8c3c9d1)
+
+#### "assign" method in assembly language:
+
+![ins set driver basic assign](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/7e08a0bb-2a08-400b-9190-075722a105a0)
+
+## Task 2 completed
