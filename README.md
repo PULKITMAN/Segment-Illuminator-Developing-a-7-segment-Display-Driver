@@ -74,8 +74,13 @@ The truth-table shown in the below image shows the state of the outputs for vari
 
 ![IMG_20240625_023954](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/b2867ec1-fa90-4088-8681-7d80b559fee0)
 
+---
+
 To code we can think of making an array of numbers containg decimal counterpart of (abcdefg)<sub>2</sub>. Then according to the input we will take out the number from the array and assign 'a' to 'f' their respective '1s' and '0s'.
 
 The image shown below shows my code. To check the output I have displayed the value of (abcdefg)<sub>2</sub> for the corresponding input number. We can clearly see that the output value is matching the values from the truth-table.
 
+![code for driver](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/53a12bc7-a0b6-4651-919b-a594249b2393)
+
+The image attached below shows the output.
 
