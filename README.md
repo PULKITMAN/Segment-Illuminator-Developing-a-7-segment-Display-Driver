@@ -74,4 +74,8 @@ The truth-table shown in the below image shows the state of the outputs for vari
 
 ![IMG_20240625_023954](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/b2867ec1-fa90-4088-8681-7d80b559fee0)
 
-To code we can think making an array of bitstrings and depending on the input we will assign the values of the bitstring to the respective output variables.
+To code we can think of making an array of numbers containg decimal counterpart of (abcdefg)<sub>2</sub>. Then according to the input we will take out the number from the array and assign 'a' to 'f' their respective '1s' and '0s'.
+
+The image shown below shows my code. To check the output I have displayed the value of (abcdefg)<sub>2</sub> for the corresponding input number. We can clearly see that the output value is matching the values from the truth-table.
+
+
