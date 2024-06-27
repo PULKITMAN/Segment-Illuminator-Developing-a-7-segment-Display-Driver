@@ -106,3 +106,13 @@ Now we should update our code and compile it using "***risc-v gcc***" which is t
 ![ins set driver basic assign](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/7e08a0bb-2a08-400b-9190-075722a105a0)
 
 ## Task 2 completed
+
+## Task - 3 -> SPIKE Simulation and observation with -O1 and -Ofast. Upload snapshot of compiled C Code, RISC-V Objdmp with above options on your GitHub repo
+
+The snap of code which I used:
+
+![code for driver](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/53a12bc7-a0b6-4651-919b-a594249b2393)
+
+Outputs from C language GCC and RISC-V GCC:
+
+![same output basic driver](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/561d2121-c63a-49cb-9d99-a1511079b244)
