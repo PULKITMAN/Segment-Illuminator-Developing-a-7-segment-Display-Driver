@@ -116,3 +116,21 @@ The snap of code which I used:
 Outputs from C language GCC and RISC-V GCC:
 
 ![same output basic driver](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/561d2121-c63a-49cb-9d99-a1511079b244)
+
+We can clearly see that both the outputs are same.
+### ***objdump*** of "O1" mode: 
+
+![objdump o1 main basic driver](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/47a3139c-f16a-4d75-bc17-81f51cd5d556)
+
+![objdump o1 assign basic driver](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/1f4e9670-756c-48b4-bd77-4f516b533163)
+
+---
+### ***objdump*** of "Ofast" mode:
+
+![objdump fast main basic driver](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/643c22b1-d462-4a6a-a12a-8adb3fb64f17)
+
+![objdump fast assign basic driver](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/42143712-439a-457e-8573-af480d81014e)
+
+---
+
+## Task 3 completed
