@@ -164,5 +164,44 @@ We define 6 *instruction formats* in RISC-V -
 ## R-type Instruction
 
 * R-type is an operation without immediate. The immediate is the number that exists as an integer in the instructions.
+* The 7 bits from 0 to 6 are opcode (operation code), used to identify the type of instruction.
+* Bits 7 to 11 are the index of the rd register. The Rd register is also called the destination register, and the destination register is the register used to store the result. 
+* func3(3-bit), combined with opcode, this field describes what operation to perform.
+* rs1 and rs2 arefunc7(7-bit), combined with opcode and fun3, this field describes what operation to perform. called source registers. In most cases, instructions need to read the values of the two source registers for operations. The index of rs1 is in bits 15-19, and the index of rs2 is in bits 20-24.
+* This instruction requires opcode plus funct3, and sometimes funct7 together to determine the type of operation that this instruction allows the CPU to perform.
 
+Below image shows the format of all the R-Type instructions:
+
+![all r type ins encoding](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/f0654d42-2c5d-4dfb-8614-ca5c2e7692ef)
+
+## I-type Instruction
+
+* I stands for immediate in I-type instructions, indicating that operations are executed using registers and immediate values and are not dependent on memory locations.
+* The upper 12 bits of I-type is an immediate number.
+* The opcode is different from other instruction formats because the corresponding specific operations are different, and other parts are very similar to R-type.
+
+Below image shows the format of all the I-Type instructions:
+
+![all i type ins encoding](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/c18db051-a68b-4754-9ce7-9e9e69a59682)
+
+## S-type Instruction
+
+* S stands for "store" in S-type instructions, indicating that they are store-type instructions that aid in storing register values in memory. This type of command is mostly used for storing.
+* The characteristic of S-type instruction is that there is no rd register.
+* The immediate is divided into two parts, the first part is in bit 11-5, and the second part is in bit 4-0.
+
+Below image shows the format of all the S-Type instructions:
+
+![all s type ins encoding](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/315a3dde-c506-4992-bb63-8eb6ac99faff)
+
+## B-type Instruction
+
+* B stands for branching in an instruction of the B-type, indicating that it is mostly used for branching under specific conditions.
+* B-type instructions are mainly used as branch instructions, but they are conditional Branch. It means to decide whether to jump or not need to depend on whether the condition is valid.
+* The instruction does not include rd register and funct7, but contains rs1, rs2, funct3 and immediate.
+* The immediate is divided into two areas.
+
+Below image shows the format of all the B-Type instructions:
+
+![all b type ins encoding](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/00c85763-03bb-44aa-9d1d-371d06bdb4f7)
 
