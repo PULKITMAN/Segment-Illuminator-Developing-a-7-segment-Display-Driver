@@ -224,16 +224,204 @@ Below image shows the format of all the U-Type instructions:
 
 ![all j type ins encoding](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/71f6238d-0567-4ef2-9ce7-b0d9c5412798)
 
-# **Lets decode the instructions given to us
+# Lets decode the instructions given to us
 
 ```
 ADD r1, r2, r3
 ```
 > * This is a R-Type instruction.
-> * From the image in R-Type sub block, we can see
-> - func7: 0000000
-> - rs2 = r3: 00011
-> - rs1 = r2: 00010
-> - funct3: 000
-> - rd = r1 = 00001
-> - Opcode: 0110011
+> * From the image in R-Type sub block, we can see:
+>   - func7: 0000000
+>   - rs2 = r3: 00011
+>   - rs1 = r2: 00010
+>   - funct3: 000
+>   - rd = r1 = 00001
+>   - Opcode: 0110011
+
+32 bit instruction: `0000000_00011_00010_000_00001_0110011`
+
+---
+
+```
+SUB r3, r1, r2
+```
+> * This is a R-Type instruction.
+> * From the image in R-Type sub block, we can see:
+>   - func7: 0100000
+>   - rs2 = r2: 00010
+>   - rs1 = r1: 00001
+>   - funct3: 000
+>   - rd = r3 = 00011
+>   - Opcode: 0110011
+
+32 bit instruction: `0100000_00010_00001_000_00011_0110011`
+
+---
+
+```
+AND r2, r1, r3
+```
+> * This is a R-Type instruction.
+> * From the image in R-Type sub block, we can see:
+>   - func7: 0000000
+>   - rs2 = r3: 00011
+>   - rs1 = r1: 00001
+>   - funct3: 111
+>   - rd = r2 = 00010
+>   - Opcode: 0110011
+
+32 bit instruction: `0000000_00011_00001_111_00010_0110011`
+
+---
+
+```
+OR r8, r2, r5
+```
+> * This is a R-Type instruction.
+> * From the image in R-Type sub block, we can see:
+>   - func7: 0000000
+>   - rs2 = r5: 00101
+>   - rs1 = r2: 00010
+>   - funct3: 110
+>   - rd = r8 = 01000
+>   - Opcode: 0110011
+
+32 bit instruction: `0000000_00101_00010_110_01000_0110011`
+
+---
+
+```
+XOR r8, r1, r4
+```
+> * This is a R-Type instruction.
+> * From the image in R-Type sub block, we can see:
+>   - func7: 0000000
+>   - rs2 = r4: 00100
+>   - rs1 = r1: 00001
+>   - funct3: 100
+>   - rd = r8 = 01000
+>   - Opcode: 0110011
+
+32 bit instruction: `0000000_00100_00001_100_01000_0110011`
+
+---
+
+```
+SLT r10, r2, r4
+```
+> * This is a R-Type instruction.
+> * SLT means Set if Less Than.
+> * r10 is the destination register that sets to 1, if r2 is less than r4, else 0 if r2 is greater than r4.
+> * From the image in R-Type sub block, we can see:
+>   - func7: 0000000
+>   - rs2 = r4: 00100
+>   - rs1 = r1: 00010
+>   - funct3: 010
+>   - rd = r10 = 01010
+>   - Opcode: 0110011
+
+32 bit instruction: `0000000_00100_00010_010_01010_0110011`
+
+---
+
+```
+ADDI r12, r3, 5
+```
+> * This is an I-Type instruction.
+> * From the image in I-Type sub block, we can see:
+>   - imm[11:0] = 5: 000000001001 
+>   - rs1 = r3: 00011
+>   - funct3: 000
+>   - rd = r12 = 01100
+>   - Opcode: 0010011
+
+32 bit instruction: `000000001001_00011_000_01100_0010011`
+
+---
+
+```
+SW r3, r1, 4
+```
+> * This is a S-Type instruction.
+> * r3 is the source register. This instruction will store the value located in register r1 at the address obtained by adding the immediate value 4 with the address located in register r1.
+> * From the image in S-Type sub block, we can see:
+>   - imm[11:5]: 0000000
+>   - rs2 = r3: 00011
+>   - rs1 = r1: 00001
+>   - funct3: 010
+>   - imm[4:0]: 00100
+>   - Opcode: 0100011
+
+32 bit instruction: `0000000_00011_00001_010_00100_0100011`
+
+---
+
+```
+SRL r16, r11, r2
+```
+> * This is a R-Type instruction.
+> * SRL means Logical Shift Right.
+> * r16 is the destination register, in which the value stored in r11 will be written after performing logical right shift based on the number stored in r2.
+> * From the image in R-Type sub block, we can see:
+>   - func7: 0000000
+>   - rs2 = r2: 00010 
+>   - rs1 = r11: 01011
+>   - funct3: 101
+>   - rd = r16 = 10000
+>   - Opcode: 0110011
+
+32 bit instruction: `0000000_00010_01011_101_10000_0110011`
+
+---
+
+```
+BNE r0, r1, 20
+```
+> * This is a B-Type instruction.
+> * BNE means Branch if Not Equal.
+> * Here BNE specifies the condition that the value stored in r0 != (is not equal to) the value stored in r1. If the condition becomes true, Program Counter will be updated by PC + 20, else PC + 4 for next instruction.
+> * From the image in B-Type sub block, we can see:
+>   - imm[12|10:5]:0000001
+>   - rs2 = r1: 00001 
+>   - rs1 = r0: 00000
+>   - funct3: 001
+>   - imm[4:1|11]: 01000
+>   - Opcode: 1100011
+
+32 bit instruction: `0000001_00001_00000_001_01000_1100011`
+
+---
+
+```
+BEQ r0, r0, 15
+```
+> * This is a B-Type instruction.
+> * BEQ means Branch if Equal.
+> * Here BEQ specifies the condition that the value stored in r0 == (is equal to) the value stored in r0. If the condition becomes true, Program Counter will be updated by PC + 15, else PC + 4 for next instruction.
+> * From the image in B-Type sub block, we can see:
+>   - imm[12|10:5]:0000000
+>   - rs2 = r0: 00000 
+>   - rs1 = r0: 00000
+>   - funct3: 000
+>   - imm[4:1|11]: 11110
+>   - Opcode: 1100011
+
+32 bit instruction: `0000000_00000_00000_000_11110_1100011`
+
+---
+
+```
+LW r13, r11, 2
+```
+> * This is a B-Type instruction.
+> * BEQ means Branch if Equal.
+> * Here BEQ specifies the condition that the value stored in r0 == (is equal to) the value stored in r0. If the condition becomes true, Program Counter will be updated by PC + 15, else PC + 4 for next instruction.
+> * From the image in B-Type sub block, we can see:
+>   - imm[12|10:5]:0000000
+>   - rs2 = r0: 00000 
+>   - rs1 = r0: 00000
+>   - funct3: 000
+>   - imm[4:1|11]: 11110
+>   - Opcode: 1100011
+
+32 bit instruction: `0000000_00000_00000_000_11110_1100011`
