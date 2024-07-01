@@ -180,9 +180,11 @@ Below image shows the format of all the R-Type instructions:
 * The upper 12 bits of I-type is an immediate number.
 * The opcode is different from other instruction formats because the corresponding specific operations are different, and other parts are very similar to R-type.
 
-Below image shows the format of all the I-Type instructions:
+Below images shows the format of all the I-Type instructions:
 
 ![all i type ins encoding](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/c18db051-a68b-4754-9ce7-9e9e69a59682)
+![all L type ins encoding](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/b36f2032-e269-42ec-855d-0d951e14e076)
+
 
 ## S-type Instruction
 
