@@ -1,8 +1,8 @@
 # VSDsquadron-mini-internship
 RISC-V Research Internship.
-
-## Task - 1 -> Using a RISC-V simulator, write a C program to count the sum of all numbers from 1 to n.
-
+<details>
+   <summary>Task - 1 -> Using a RISC-V simulator, write a C program to count the sum of all numbers from 1 to n.</summary>
+   
 ## Writing a C code to count sum of numbers from 1 to n
 1. I started by opening Terminal and creating and opening a new C file in Leafpad and named it as sum1ton.c . I wrote the code in it as shown in below image.
 ![code ](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/0d647449-334d-415f-9237-8736b00b070e)
@@ -21,10 +21,14 @@ After running the code in the terminal, I needed to run it in the RISC-V simulat
 ![main assembly fast](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/1d3d065d-cc21-4200-93d1-4564f364b854)
 
 ### Task 1 finished
+</details>
 
 
-## Task - 2 -> Write a simple C program for your project selected and compile with RISC-V GCC
-### My project is to develop a 7 segment display driver.
+
+<details>
+   <summary>Task - 2 -> Write a simple C program for your project selected and compile with RISC-V GCC</summary>
+   
+## My project is to develop a 7 segment display driver.
 Before writing the code first we should understand what is a "***7 segment display***" and how does it work. Once we understand how does it works we can develop the driver to run it very easily.
 
 ### An Overview of 7 Segment Display
@@ -107,7 +111,11 @@ Now we should update our code and compile it using "***risc-v gcc***" which is t
 
 ## Task 2 completed
 
-## Task - 3 -> SPIKE Simulation and observation with -O1 and -Ofast. Upload snapshot of compiled C Code, RISC-V Objdmp with above options on your GitHub repo
+</details>
+
+
+<details>
+   <summary>Task - 3 -> SPIKE Simulation and observation with -O1 and -Ofast. Upload snapshot of compiled C Code, RISC-V Objdmp with above options on your GitHub repo</summary>
 
 The snap of code which I used:
 
@@ -135,8 +143,11 @@ We can clearly see that both the outputs are same.
 
 ## Task 3 completed
 
-# Task - 4 -> RISC-V INSTRUCTIONS
+</details>
 
+
+<details>
+   <summary>Task - 4 -> RISC-V INSTRUCTIONS</summary>
 ## INSTRUCTION SET ARCHITECTURE(ISA)
 
 You have to know the language of computer hardware in order to control it. A computer's vocabulary is referred to as an instruction set, and the words that make up its language are called instructions.
@@ -445,4 +456,8 @@ SLL r15, r11, r2
 
 32 bit instruction: `0000000_00010_01011_001_01111_0110011`
 
-## Task 3 Complete.
+## Task 4 Complete.
+
+</details>
+ 
+
