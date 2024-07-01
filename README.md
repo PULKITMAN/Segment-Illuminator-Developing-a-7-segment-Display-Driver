@@ -149,7 +149,7 @@ A RISC-V ISA is composed of optional extensions to the base integer ISA and a ba
 
 By convention, RISCV instructions are each  **1 word = 4 bytes = 32 bits**. Divide the 32 bits of an instruction into **“fields”**.
 
-RV32I has x0 register hardwired to constant 0, plus x1-x31 general purpose registers. All registers are 32 bits wide but in RV64I they become 64 bits wide. RV32I is a load-store architecture. This means that only load and store instructions access memory; arithmetic operations use only the registers. User space is 32-bit byte addressable and little endian.
+RV32I has x0 register hardwired to constant 0, plus x1-x31 general purpose registers. All registers are 32 bits wide but in RV64I they become 64 bits wide. RV32I is a load-store architecture. This means that only load and store instructions access memory; arithmetic operations use only the registers. User space is 32-bit byte addressable and little endian. We can access the registers by specifying their index numbers.
 
 We define 6 *instruction formats* in RISC-V -
 1. R-format
@@ -205,3 +205,35 @@ Below image shows the format of all the B-Type instructions:
 
 ![all b type ins encoding](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/00c85763-03bb-44aa-9d1d-371d06bdb4f7)
 
+## U-type Instruction
+
+* U-type instructions are used to send immediate data into the target register. The letter U stands for Upper Immediate instructions.
+* A 20-bit immediate is provided in the U-type instruction.
+* The final operation result is related to the 20-bit immediate, and the result is written back to the rd register.
+* There are no funct3, rs1, rs2, and funct7 in U-type.
+* This type of instruction structure is very simple.
+
+Below image shows the format of all the U-Type instructions:
+
+![all u type ins encoding](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/84cc49b1-ccf4-4187-950d-3688d266a351)
+
+## J-type Instruction
+
+* J stands for jump in J-type instruction, indicating that jump type instruction is implemented using this instruction format.
+* The format of this instruction is very similar to U-type, it only have Rd register and immediate and opcode.
+
+![all j type ins encoding](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/71f6238d-0567-4ef2-9ce7-b0d9c5412798)
+
+# **Lets decode the instructions given to us
+
+```
+ADD r1, r2, r3
+```
+> * This is a R-Type instruction.
+> * From the image in R-Type sub block, we can see
+> - func7: 0000000
+> - rs2 = r3: 00011
+> - rs1 = r2: 00010
+> - funct3: 000
+> - rd = r1 = 00001
+> - Opcode: 0110011
