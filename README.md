@@ -134,3 +134,32 @@ We can clearly see that both the outputs are same.
 ---
 
 ## Task 3 completed
+
+# Task - 4 -> RISC-V INSTRUCTIONS
+
+## INSTRUCTION SET ARCHITECTURE(ISA)
+
+You have to know the language of computer hardware in order to control it. A computer's vocabulary is referred to as an instruction set, and the words that make up its language are called instructions.
+
+The abstract model of a computer includes an Instruction Set Architecture (ISA), which specifies how the software controls the central processing unit (CPU). The Instruction Set Specification Architecture (ISA) serves as an interface between the hardware and software, defining the capabilities and methods of the processor.
+
+## RISC-V ISA
+
+A RISC-V ISA is composed of optional extensions to the base integer ISA and a base integer ISA that is required in every implementation. With the exception of lacking branch delay slots and supporting optional variable-length instruction encodings, the base integer ISAs are remarkably comparable to the early RISC(Reduced Instruction Set Computer) processors.
+
+By convention, RISCV instructions are each  **1 word = 4 bytes = 32 bits**. Divide the 32 bits of an instruction into **“fields”**.
+
+We define 6 *instruction formats* in RISC-V -
+1. R-format
+2. I-format
+3. S-format
+4. B-format
+5. U-format
+6. J-format
+
+![isa type risc v](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/afa984a7-9c10-4627-8bc1-73f59b681e6e)
+
+## * R-type Instruction
+
+
+
