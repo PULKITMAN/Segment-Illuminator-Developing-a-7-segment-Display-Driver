@@ -424,3 +424,23 @@ LW r13, r11, 2
 >   - Opcode: 0000011
 
 32 bit instruction: `000000000010_01011_010_01101_0000011`
+
+---
+
+```
+SLL r15, r11, r2
+```
+> * This is a R-Type instruction.
+> * SLL means Logical Shift Left.
+> * r15 is the destination register, in which the value stored in r11 will be written after performing logical left shift based on the number stored in r2.
+> * From the image in R-Type sub block, we can see:
+>   - func7: 0000000
+>   - rs2 = r2: 00010 
+>   - rs1 = r11: 01011
+>   - funct3: 001
+>   - rd = r15 = 01111
+>   - Opcode: 0110011
+
+32 bit instruction: `0000000_00010_01011_001_01111_0110011`
+
+## Task 3 Complete.
