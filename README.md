@@ -149,6 +149,8 @@ A RISC-V ISA is composed of optional extensions to the base integer ISA and a ba
 
 By convention, RISCV instructions are each  **1 word = 4 bytes = 32 bits**. Divide the 32 bits of an instruction into **“fields”**.
 
+RV32I has x0 register hardwired to constant 0, plus x1-x31 general purpose registers. All registers are 32 bits wide but in RV64I they become 64 bits wide. RV32I is a load-store architecture. This means that only load and store instructions access memory; arithmetic operations use only the registers. User space is 32-bit byte addressable and little endian.
+
 We define 6 *instruction formats* in RISC-V -
 1. R-format
 2. I-format
@@ -159,7 +161,8 @@ We define 6 *instruction formats* in RISC-V -
 
 ![isa type risc v](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/afa984a7-9c10-4627-8bc1-73f59b681e6e)
 
-## * R-type Instruction
+## R-type Instruction
 
+* R-type is an operation without immediate. The immediate is the number that exists as an integer in the instructions.
 
 
