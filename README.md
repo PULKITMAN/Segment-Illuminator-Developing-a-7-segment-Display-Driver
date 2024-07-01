@@ -413,15 +413,14 @@ BEQ r0, r0, 15
 ```
 LW r13, r11, 2
 ```
-> * This is a B-Type instruction.
-> * BEQ means Branch if Equal.
-> * Here BEQ specifies the condition that the value stored in r0 == (is equal to) the value stored in r0. If the condition becomes true, Program Counter will be updated by PC + 15, else PC + 4 for next instruction.
-> * From the image in B-Type sub block, we can see:
->   - imm[12|10:5]:0000000
->   - rs2 = r0: 00000 
->   - rs1 = r0: 00000
->   - funct3: 000
->   - imm[4:1|11]: 11110
->   - Opcode: 1100011
+> * This is a I-Type instruction.
+> * LW means Load Word.
+> * r13 is the destination register that will hold the value fetched from the memory location calculated by using (address value stored in r11 + immediate value)
+> * From the image in I-Type sub block, we can see:
+>   - imm[11:0] = 2: 000000000010 
+>   - rs1 = r11: 01011
+>   - funct3: 010
+>   - rd = r13 = 01101
+>   - Opcode: 0000011
 
-32 bit instruction: `0000000_00000_00000_000_11110_1100011`
+32 bit instruction: `000000000010_01011_010_01101_0000011`
