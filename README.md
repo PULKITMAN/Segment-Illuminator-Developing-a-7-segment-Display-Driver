@@ -23,7 +23,7 @@ After running the code in the terminal, I needed to run it in the RISC-V simulat
 ### Task 1 finished
 </details>
 
-
+---
 
 <details>
    <summary>Task - 2 -> Write a simple C program for your project selected and compile with RISC-V GCC</summary>
@@ -113,6 +113,7 @@ Now we should update our code and compile it using "***risc-v gcc***" which is t
 
 </details>
 
+---
 
 <details>
    <summary>Task - 3 -> SPIKE Simulation and observation with -O1 and -Ofast. Upload snapshot of compiled C Code, RISC-V Objdmp with above options on your GitHub repo</summary>
@@ -145,6 +146,7 @@ We can clearly see that both the outputs are same.
 
 </details>
 
+---
 
 <details>
    <summary>Task - 4 -> RISC-V INSTRUCTIONS</summary>
