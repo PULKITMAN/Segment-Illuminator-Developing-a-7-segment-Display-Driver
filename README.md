@@ -150,6 +150,7 @@ We can clearly see that both the outputs are same.
 
 <details>
    <summary>Task - 4 -> RISC-V INSTRUCTIONS</summary>
+   
 ## INSTRUCTION SET ARCHITECTURE(ISA)
 
 You have to know the language of computer hardware in order to control it. A computer's vocabulary is referred to as an instruction set, and the words that make up its language are called instructions.
