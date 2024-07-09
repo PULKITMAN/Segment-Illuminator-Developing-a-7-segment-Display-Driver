@@ -599,6 +599,7 @@ The following diagram is for Common Cathode seven segment led:
 | f              | PD5    |
 | g              | PD6    |
 | CA/CC          | VCC/GND|
+## Task 6 Complete.
 </details>
 
-## Task 6 Complete.
+
