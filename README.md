@@ -560,5 +560,45 @@ RV32I refers to the 32-bit base integer instruction set architecture (ISA) of RI
 # Developing a 7 segment display driver using VSDSquadron Mini
 
 ## Overview
-The project presents an innovative integration of CH32V003 RISC-V processor to create a 7 segment LED display driver. The processor decodes the given number into its binary counterpart and according to the bits it gives signal to each segment whether it should glow or not. Thus, instead of setting the display manually everytime we can automate it.
+The project presents an innovative integration of CH32V003 RISC-V processor to create a 7 segment LED display driver. The processor decodes the given number into its binary counterpart and according to the bits it gives signal to each segment whether it should glow or not. Thus, instead of setting the display manually everytime we can automate it. Currently we are driving only one display, future works will include integrating 2 displays together.
+
+## Components Required
+* VSDSquadron Mini
+* 1 seven segment display
+* Breadboard
+* Power Supply
+* Jumper Wires
+* Resistors
+
+## Circuit Connection
+* Connect the Common Anode/Cathode pin to VCC or GND via a resistor depending on the type of display.
+* Connect `PD0` to pin `a` of the display.
+* Connect `PD1` to pin `b` of the display.
+* Connect `PD2` to pin `c` of the display.
+* Connect `PD3` to pin `d` of the display.
+* Connect `PD4` to pin `e` of the display.
+* Connect `PD5` to pin `f` of the display.
+* Connect `PD6` to pin `g` of the display.
+
+The above pins recives the signals the on/off signals for the segments.
+
+## Pinout Diagram for the project
+The following diagram is for Common Cathode seven segment led:
+
+![diagram](https://github.com/PULKITMAN/Segment-Illuminator-Developing-a-7-segment-Display-Driver/assets/118650271/9d4156e7-dcf0-4e56-9092-37df6bac9fab)
+
+
+## Table for Pin connection
+| SEVEN SEGMENT  | RISC-V |
+| -------------- | ------ |
+| a              | PD0    |
+| b              | PD1    |
+| c              | PD2    |
+| d              | PD3    |
+| e              | PD4    |
+| f              | PD5    |
+| g              | PD6    |
+| CA/CC          | VCC/GND|
 </details>
+
+## Task 6 Complete.
