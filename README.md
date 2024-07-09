@@ -556,7 +556,7 @@ RV32I refers to the 32-bit base integer instruction set architecture (ISA) of RI
 ---
 
 <details>
-   <summary>Task 6 -> Overview, Components Required, Circuit Connection, Pinout Diagram and Table for Pin connection required to build the display driver.</summary>
+   <summary>Task - 6 -> Overview, Components Required, Circuit Connection, Pinout Diagram and Table for Pin connection required to build the display driver.</summary>
 # Developing a 7 segment display driver using VSDSquadron Mini
 
 ## Overview
