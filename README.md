@@ -463,11 +463,19 @@ SLL r15, r11, r2
 
 </details>
  
+---
 
 <details>
-   <summarry>Task - 5 ->Implementaion of RISC-V RV32I on Verilog and Verifying execution using waveforms</summarry>
+   <summary>Task - 5 -> Implementaion of RISC-V RV32I on Verilog and Verifying execution using waveforms</summary>
 
 # RV32 I
---
 RV32I refers to the 32-bit base integer instruction set architecture (ISA) of RISC-V, an open-source hardware instruction set architecture based on established reduced instruction set computing (RISC) principles.
+
+# BLOCK DIAGRAM OF RISC-V RV32I
+![block rv32i](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/49a31768-868c-4f6d-994c-762b1fdc1a21)
+
+# INSTRUCTION SET OF RISC-V RV32I
+![ins rv32i](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/1790524a-cd90-4e58-88fe-def792136a0c)
+
+
 </details>
