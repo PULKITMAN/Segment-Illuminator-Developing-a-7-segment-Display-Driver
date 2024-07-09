@@ -477,5 +477,78 @@ RV32I refers to the 32-bit base integer instruction set architecture (ISA) of RI
 # INSTRUCTION SET OF RISC-V RV32I
 ![ins rv32i](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/1790524a-cd90-4e58-88fe-def792136a0c)
 
+## Starting with Functional Simulation
+* First I installed the iverilog and gtkwave using following commands:
+  ```
+  sudo apt-get update
+  ```
+  ```
+  sudo apt-get install iverilog gtkwave
+  ```
+* Cloning the github repository:
+   ```
+   git clone https://github.com/vinayrayapati/rv32i
+   ```
 
+* Chanding the working directory to `rv32i` using the following comand:
+  ```
+   cd rv32i
+  ```
+
+  ![clone repo](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/58d7efbb-6b95-497a-9cf3-2833a528c1ff)
+
+* To simulate and run the verilog code , entered the following commands in the terminal:
+  ```
+  iverilog -o rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
+  ```
+  ```
+  ./iiitb_rv32i
+  ```
+* For seeing the output waveform I used the following command:
+  ```
+  gtkwave iiitb_rv32i.vcd
+  ```
+* The GTKWave will be opened and following window will be appeared:
+![stkwave](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/6b1347b9-2998-4ad6-b6da-c73a07112054)
+
+# The Output Waveforms
+- Here are the output waveforms:
+  1. `ADD R6, R2, R1`
+     Reg A has `1` and Reg B has `2`. So, their sum is `3`.
+          
+![1](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/5b39cb10-3aa3-4577-b972-5d48bf18618c)
+
+  2. `SUB R7, R1, R2`
+     Reg A has `1` and Reg B has `2`. So, their difference is `-1`.
+
+![2](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/1b989822-b849-4e59-9a6b-22429454f4b2)
+
+  3. `AND R8, R1, R3`
+     Reg A has `1` and Reg B has `3`. So their bit-wise AND is `1`.
+
+![3](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/7ac20c8f-3a19-4802-8f00-cc1d3c48cbbe)
+    
+  4. `OR R9, R2, R5`
+      Reg A has `2` and Reg B has `5`. So their bitwise OR is `7`.
+
+![4](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/c1c8b039-94ad-421e-9c20-4f6fd691689c)
+
+  5. `XOR R10, R1, R4`
+      Reg A has `1` and Reg B has `4`. So their bitwise XOR is `5`.
+
+![5](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/44f19a67-054e-4b27-b7b9-ab02d66b3854)
+
+  6. `SLT R1, R2, R4`
+     Reg A has `2` and Reg B has `4`. Since `2` is less than `4` output is `1`.
+
+![6](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/4f15463e-c800-4fbc-987a-24382f167205)
+
+  7. `ADDI R12, R4, 5`
+     Reg A has `4` and and immediate value is `5`. So their sum is `9`.
+
+![7](https://github.com/PULKITMAN/VSD_MINI_ResearchInternship/assets/118650271/9e99c084-0715-4d5b-9363-659c9e20b3b7)
+
+## Task 5 Complete.
+
+ 
 </details>
