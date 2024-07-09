@@ -552,3 +552,13 @@ RV32I refers to the 32-bit base integer instruction set architecture (ISA) of RI
 
  
 </details>
+
+---
+
+<details>
+   <summary>Task 6 -> Overview, Components Required, Circuit Connection, Pinout Diagram and Table for Pin connection required to build the display driver.</summary>
+# Developing a 7 segment display driver using VSDSquadron Mini
+
+## Overview
+The project presents an innovative integration of CH32V003 RISC-V processor to create a 7 segment LED display driver. The processor decodes the given number into its binary counterpart and according to the bits it gives signal to each segment whether it should glow or not. Thus, instead of setting the display manually everytime we can automate it.
+</details>
